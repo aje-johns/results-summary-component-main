@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+:root {
+  --LightRed: hsl(0, 100%, 67%);
+  --OrangeyYellow: hsl(39, 100%, 56%);
+  --GreenTeal: hsl(166, 100%, 37%);
+  --CobaltBlue: hsl(234, 85%, 45%);
+
+  /* ## Gradients */
+
+  --GradientsLightSlateBlue: hsl(252, 100%, 67%);
+  --GradientsLightRoyalBlue: hsl(241, 81%, 54%);
+
+  --GradientsVioletBlue: hsla(256, 72%, 46%, 1);
+  --GradientsPersianBlue: hsla(241, 72%, 46%, 0);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --PaleBlue: hsl(221, 100%, 96%);
+  --LightLavender: hsl(241, 100%, 89%);
+  --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.flex {
+  display: flex;
+}
+
+.body {
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 241, 241);
+}
+
+.cardContainer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px rgba(145, 145, 145, 0.1);
+  border-radius: 30px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  background-image: linear-gradient(
+    var(--GradientsLightSlateBlue),
+    var(--GradientsLightRoyalBlue)
+  );
+}
+.box {
+  height: 400px;
+  width: 270px;
+}
+
+.leftTitle {
+  color: rgba(240, 248, 255, 0.701);
+  padding: 10px;
+  font-size: 18px;
+}
+
+.leftCircle {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(
+    var(--GradientsVioletBlue),
+    var(--GradientsPersianBlue)
+  );
+}
+
+.leftCircle .value76 {
+  color: var(--PaleBlue);
+  font-size: 60px;
+}
+.leftCircle .value100 {
+  color: rgba(255, 255, 255, 0.345);
+  font-size: 14px;
+}
+
+.greeting {
+  color: var(--White);
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+.info {
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  color: rgb(181, 181, 181);
+  font-size: 14px;
+  width: 76%;
+  margin: 0px auto;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 270px;
+}
+.rightContent {
+  width: 80%;
+  margin: 0 auto;
+}
+.rightContent .rightTitle {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rightContent button {
+  padding: 10px;
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  background-color: var(--DarkGrayBlue);
+  border-radius: 30px;
+  margin-top: 30px;
+  border: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.rightContentBox {
+  margin: 15px 0;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px;
+}
+.reactionDiv {
+  background-color: rgba(247, 117, 117, 0.119);
+  color: var(--LightRed);
+}
+.memoryDiv {
+  background-color: rgba(249, 226, 123, 0.174);
+  color: var(--OrangeyYellow)
+}
+.verbalDiv {
+  background-color: rgba(36, 162, 133, 0.064);
+  color: var(--GreenTeal)
+}
+.visualDiv {
+  background-color: rgba(164, 164, 249, 0.114);
+  color: var(--CobaltBlue)
+}
+
+.summaryContentRight {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  padding-right: 10px;
+}
+
+.lightFont {
+  color: grey;
+}
+.darkFont {
+  color: var(--DarkGrayBlue);
+}
+
+button:hover{
+  background-image: linear-gradient(var(--GradientsLightSlateBlue), var(--GradientsLightRoyalBlue));
+}
+
+@media (max-width: 768px) {
+  .cardContainer{
+    flex-direction: column;
+  }
+  .body{
+   height: 100vh;
+
+  }
+  .left{
+    border-radius: 0 0 50px 50px;
+  }
+  .box{
+    width: 100%;
+  }
+}
